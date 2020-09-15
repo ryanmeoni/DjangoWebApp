@@ -15,5 +15,5 @@ script:
   - python3 updateServer.py
 
     # Run our tests to perform continuous integration testing
-  - python3 Test/test.py
+  - python3 Testing/test.py
 ...
