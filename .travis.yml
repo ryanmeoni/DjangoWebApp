@@ -1,0 +1,19 @@
+---
+language: python
+versions:
+  - "3.7"
+  - "3.8" 
+
+install: 
+  # Install requirements and chomedriver, place chromedriver executable in /usr/local/bin
+  - pip3 install -r requirements.txt
+  - sudo curl --output /tmp/chromedriver.zip https://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip
+  - sudo unzip /tmp/chromedriver.zip -d /usr/local/bin/
+
+script: 
+    # Update test server with new code
+  - python3 updateServer.py
+
+    # Run our tests to perform continuous integration testing
+  - python3 Test/test.py
+...
