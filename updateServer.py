@@ -1,8 +1,10 @@
 # Almost entire format taken from PythonAnywhere's API example: https://help.pythonanywhere.com/pages/API/
 
 import requests
+import os
+
 username = "ryanmeoni"
-api_token = "b7a7ccbbda23851d8abcffeba08ba3d4a27b8e8d"
+api_token = os.environ["PA_TOKEN"]
 domain_name = "ryanmeoni.pythonanywhere.com"
 
 response = requests.post(
