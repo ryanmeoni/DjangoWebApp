@@ -1,8 +1,11 @@
 # Mac 
 .DS_Store
 
+# Django stuff 
+
 djangoRoot/db.sqlite3
 djangoRoot/django_project/__pycache__/settings.cpython-38.pyc
+djangoRoot/media/profile_pics/
 
 
 # Byte-compiled / optimized / DLL files
